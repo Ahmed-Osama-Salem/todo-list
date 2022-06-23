@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDo - LisT</title>
+  <!-- fontawesome-dns -->
+  <script src="https://kit.fontawesome.com/2298cdf080.js" crossorigin="anonymous"></script>
+  <!-- googlefonts-dns -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Lobster&family=Play&family=Poppins&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="sec1" id="secchange">
+    <div class="headcontent">
+      <h1>Welcome <span></span></h1>
+      <h2>Build your personal ToDo list</h2>
+    </div>
+    <div class="todo-form">
+      <label for="tasks" class="task1">Task</label><br>
+      <input type="text" placeholder="Your Task..." name="" value="" class="text-input" id="textinput" autofocus required>
+
+    </div>
+    <div class="btn-style">
+      <button type="button" name="button" id="addbtn">Add Task</button>
+      <button type="button" name="button" id="showbtn">Pervious Tasks</button>
+      <button type="button" name="button" id="changeback">Change background</button>
+    </div>
+    <div class="todo-task-list">
+      <label for="list" class="list1">Task List</label><br>
+      <input onkeyup="filterMyTasks(this.value)" type="text" placeholder="Filter tasks" name="" id="filter-input" value="">
+      <ul id="ulli">
+
+
+      </ul>
+      <div class="btnlst">
+        <button type="button" name="button" id="btnclear">Clear all</button>
+      </div>
+    </div>
+    <div class="scroll">
+      <i class="fa-solid fa-circle-up" id="upscroll"></i>
+    </div>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

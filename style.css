@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1000px;
+  text-align: center;
+  background-image: url(images/img1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sec1 {}
+
+.headcontent {
+  padding: 2%;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  color: white;
+  filter: drop-shadow(0 0 10px black);
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.todo-form {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+  border-radius: 20px;
+  filter: drop-shadow(0 0 3px black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.text-input {
+  width: 350px;
+  height: 35px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #FEF9A7;
+}
+
+.btn-style {
+  margin: 1%;
+}
+
+#addbtn {
+  width: 120px;
+  height: 40px;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+  border: none;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  transition: 0.5s
+}
+
+#addbtn:hover {
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+  color: black;
+  filter: drop-shadow(0 0 2px black);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#showbtn {
+  width: 120px;
+  height: 40px;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+  border: none;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s
+}
+
+#showbtn:hover {
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+  color: black;
+  filter: drop-shadow(0 0 2px black);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#changeback {
+  width: 170px;
+  height: 40px;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+  border: none;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s
+}
+
+#changeback:hover {
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+  color: black;
+  filter: drop-shadow(0 0 2px black);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.todo-task-list {
+  width: 500px;
+  height: auto;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+  border-radius: 20px;
+  filter: drop-shadow(0 0 2px black);
+  padding: 2%;
+}
+
+.list1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#filter-input {
+  width: 80%;
+  height: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.check {
+  width: 450px;
+  height: 30px;
+  background: white;
+  margin-top: 10px;
+  padding: 4px 4px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  visibility: visible;
+  font-family: 'Josefin Sans', sans-serif;
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.check:hover {
+  background-image: linear-gradient(to right, rgb(14, 154, 89), rgb(251, 243, 4));
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+i {
+  transition: 1s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+i:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.btnlst {
+  margin: 10px auto;
+}
+
+#btnclear {
+  width: 120px;
+  height: 30px;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+  border: none;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+  visibility: hidden;
+}
+
+#btnclear:hover {
+  letter-spacing: 1px;
+}
+
+.scroll {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 100px;
+  bottom: 60px;
+}
+
+#upscroll {
+  font-size: 3rem;
+  transition: 1s;
+  visibility: hidden;
+}
+
+#upscroll:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-device-width:600px) {
+
+  /***** media-query-firstsection ******/
+  body {
+    height: 100vh;
+    text-align: center;
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6rem;
+    color: white;
+    filter: drop-shadow(0 0 10px black);
+  }
+
+  span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .todo-form {
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+    border-radius: 20px;
+    filter: drop-shadow(0 0 3px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .task1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-right: 50px;
+  }
+
+  .text-input {
+    width: 370px;
+    height: 60px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #FEF9A7;
+  }
+
+  #addbtn {
+    width: 220px;
+    height: 80px;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+    border: none;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 5px;
+  }
+
+  #showbtn {
+    width: 310px;
+    height: 80px;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+    border: none;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 5px;
+  }
+
+  #changeback {
+    width: 300px;
+    height: 80px;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+    border: none;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 5px;
+  }
+
+  .btn-style {
+    margin: 1%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-task-list {
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 0.5), rgba(98, 91, 91, 0.3));
+    border-radius: 20px;
+    filter: drop-shadow(0 0 2px black);
+    padding: 2%;
+}
+
+list1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+#filter-input {
+    width: 80%;
+    height: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    margin-top: 1%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+.check {
+    width: 90%;
+    height: 50px;
+    background: white;
+    margin-top: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    visibility: visible;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style-type: none;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+#btnclear {
+  width: 310px;
+  height: 80px;
+  background-image: linear-gradient(to right, rgba(3, 3, 3, 1), rgba(98, 91, 91, 0.3));
+  border: none;
+  border-radius: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  transition: 0.5s;
+  letter-spacing: 5px;
+}
+
+.list1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+}
